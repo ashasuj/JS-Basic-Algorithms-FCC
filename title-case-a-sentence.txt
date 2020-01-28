@@ -1,0 +1,7 @@
+function titleCase(str) {
+  return str.toLowerCase().replace(/(^|\s)\S/g,L=>L.toUpperCase());
+  //First convert entire string to lowercase.Use Regex to find non whitespace characters at the beginning of string or the ones followed by a whitespace.
+  //Use replace function to replace this with uppercase
+}
+
+titleCase("I'm a little tea pot");
