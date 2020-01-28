@@ -1,0 +1,12 @@
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  let newString="";
+  if(str.length>num)
+   newString = (str.slice(0,num)).concat("...");
+   else
+   newString=str;
+  //console.log(newString)
+  return newString;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
